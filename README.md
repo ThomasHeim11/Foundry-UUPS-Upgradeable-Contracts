@@ -1,8 +1,12 @@
 # Foundry UUPS Upgradeable Contracts
-
 *This is for demo purposes only. Upgradeable contracts are a menance and in general should be avoided.
 
+The UUPS proxy pattern is similar to the transparent proxy pattern, except the upgrade is triggered via the logic contract rather than from the proxy contract.
+
+There is a unique storage slot in the proxy contract to store the address of the logic contract that it points to. Whenever the logic contract is upgraded, that storage slot is updated with the new logic contract address. The function to upgrade the contracts should be a protected function to avoid unauthorized access. Also, this provides the ability to go completely non-upgradeable gradually as the logic contract can completely remove the upgradeTo() method in the new implementation if needed.
+
 Read more about  UUPS Upgradeable Contracts: https://docs.openzeppelin.com/contracts/4.x/api/proxy
+                                         
 
 
 ![forge](https://github.com/ThomasHeim11/Foundary-Fund-Me/assets/106417552/a6df2fc9-9e64-4e41-b3e0-60139a99d923)
