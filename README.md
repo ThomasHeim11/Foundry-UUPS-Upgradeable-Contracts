@@ -2,6 +2,8 @@
 
 *This is for demo purposes only. Upgradeable contracts are a menance and in general should be avoided.
 
+Read more about  UUPS Upgradeable Contracts: https://docs.openzeppelin.com/contracts/4.x/api/proxy
+
 
 ![forge](https://github.com/ThomasHeim11/Foundary-Fund-Me/assets/106417552/a6df2fc9-9e64-4e41-b3e0-60139a99d923)
 
